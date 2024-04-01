@@ -1,0 +1,156 @@
+body {
+  background-color: rgba(23, 66, 153, 0.475);
+}
+.flex-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex {
+  display: flex;
+  position: relative;
+  max-width: 920px;
+}
+.sedans,
+.suvs,
+.luxury {
+  display: flex;
+  flex-direction: column;
+}
+.circle {
+  width: 40px;
+  height: 40px;
+  margin-left: 48px;
+  margin-top: 48px;
+  margin-bottom: 35px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  position: relative;
+}
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(0%, -50%);
+}
+.sedans {
+  width: 920px;
+  height: 500px;
+  background-color: #e28625;
+  border-radius: 8px;
+}
+.title {
+  font-family: "Big Shoulders Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: #f2f2f2;
+  margin-left: 48px;
+  margin-bottom: 25px;
+}
+.text {
+  width: 212px;
+  height: 125px;
+  margin-left: 41px;
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+  margin-bottom: 83px;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 146px;
+  height: 48px;
+  margin-left: 48px;
+  background: #f2f2f2;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #e28625;
+  margin-bottom: 48px;
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+}
+.suvs > .btn {
+  color: #006971;
+}
+.luxury > .btn {
+  color: #004140;
+}
+.suvs {
+  width: 614px;
+  height: 500px;
+  background-color: #006971;
+  border-radius: 8px;
+  position: absolute;
+  left: 33.33%;
+}
+.luxury {
+  width: 307px;
+  height: 500px;
+  background-color: #004140;
+  border-radius: 8px;
+  position: absolute;
+  left: 66.66%;
+}
+.btn:hover {
+  box-sizing: border-box;
+  cursor: pointer;
+  border: 2px solid #fff;
+  background-color: inherit;
+  color: #fff;
+}
+
+@media (max-width: 431px) {
+  .flex-container {
+    justify-content: start;
+    align-items: start;
+  }
+  .flex {
+    display: flex;
+    flex-direction: column;
+  }
+  .sedans {
+    width: 430px;
+    height: 1326px;
+    background-color: #e28625;
+    border-radius: 8px;
+  }
+  .suvs {
+    width: 430px;
+    height: 884px;
+    top: 33.33%;
+    left: 0;
+  }
+  .luxury {
+    width: 430px;
+    height: 442px;
+    top: 66.66%;
+    left: 0;
+  }
+  .text {
+    margin-bottom: 25px;
+  }
+  .btn {
+    margin-bottom: 48px;
+  }
+  .btn:hover {
+    box-sizing: border-box;
+    cursor: pointer;
+    border: 2px solid #fff;
+    background-color: #fff;
+    color: inherit;
+  }
+}
